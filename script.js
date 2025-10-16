@@ -1,3 +1,4 @@
+// Array with Object (Array with nested objects)
 const disneyCharacters = [
   { type: "mouse", name: "Mickey" },
   { type: "mouse", name: "Minnie" },
@@ -10,10 +11,14 @@ const disneyCharacters = [
   { type: "chipmunk", name: "Dale" },
   { type: "bird", name: "Clara Cluck" },
 ];
+console.log(disneyCharacters);
+console.log(disneyCharacters[4].name);
 
 //
+console.log("---------------------------------------------------------------");
 //
 
+// Object with array (Object nested array)
 const food = {
   vegetables: [
     { name: "Carrot", color: "orange" },
@@ -37,8 +42,20 @@ const food = {
     { name: "Cloudberry", color: "orange" },
   ],
 };
+console.log(food);
+console.log(food.vegetables[2].name);
+// To call more you could keep repeatign ".vegetables[2].name" and name each [1] [2] etc, or use "loops"
+
+
 
 //
+console.log("---------------------------------------------------------------");
 //
 
 const numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+console.log(numbers);
+for ( let index = 0; index < numbers.length; index++) {
+  console.log(numbers[index]);
+};
+// numbers.length - Checks how long the array is
+
